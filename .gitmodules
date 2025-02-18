@@ -1,0 +1,12 @@
+[submodule "auth"]
+	path = auth
+	url = https://github.com/NPH-DIGITAL-COMPANY-LIMITED/ota-system-auth.git
+[submodule "post"]
+	path = post
+	url = https://github.com/NPH-DIGITAL-COMPANY-LIMITED/ota-system-post.git
+[submodule "notification"]
+	path = notification
+	url = https://github.com/NPH-DIGITAL-COMPANY-LIMITED/ota-system-notification.git
+[submodule "files"]
+	path = files
+	url = https://github.com/NPH-DIGITAL-COMPANY-LIMITED/ota-system-files.git

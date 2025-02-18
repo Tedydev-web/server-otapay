@@ -1,0 +1,40 @@
+apiVersion: v2
+name: ota-system
+description: A Helm chart for ota-system NestJS microservices architecture
+type: application
+version: 0.1.0
+appVersion: "1.0.0"
+kubeVersion: ">=1.18.0-0"
+
+keywords:
+  - nestjs
+  - microservices
+  - backend
+  - typescript
+  - nodejs
+
+home: https://github.com/NPH-DIGITAL-COMPANY-LIMITED
+sources:
+  - https://github.com/NPH-DIGITAL-COMPANY-LIMITED
+
+dependencies:
+  - name: kong
+    version: 2.19.0
+    repository: https://charts.konghq.com
+    condition: kong.enabled
+  - name: loki-stack
+    version: 2.9.10
+    repository: https://grafana.github.io/helm-charts
+    condition: loki-stack.enabled
+  - name: common
+    version: 1.16.0
+    repository: https://charts.bitnami.com/bitnami
+
+maintainers:
+  - name: Tedy Dev
+    email: hieudat2310.bh@gmail.com
+    url: https://github.com/Tedydev-web
+
+annotations:
+  category: Application
+  licenses: MIT
